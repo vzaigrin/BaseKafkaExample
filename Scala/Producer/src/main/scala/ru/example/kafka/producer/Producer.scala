@@ -13,7 +13,7 @@ object Producer {
     // Создаём Producer
     val props = new Properties()
     props.put("bootstrap.servers", servers)
-    val producer = new KafkaProducer(props, new LongSerializer, new StringSerializer)
+    val producer = new KafkaProducer(props, new IntegerSerializer, new StringSerializer)
 
     // Генерируем записи
     try {

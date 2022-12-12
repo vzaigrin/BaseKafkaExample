@@ -19,7 +19,7 @@ object Consumer {
     props.put("group.id", group)
     props.put("auto.offset.reset", "earliest")
     props.put("enable.auto.commit", false)
-    val consumer = new KafkaConsumer(props, new LongDeserializer, new StringDeserializer)
+    val consumer = new KafkaConsumer(props, new IntegerDeserializer, new StringDeserializer)
     consumer.subscribe(List(topic).asJavaCollection)
 
     // Читаем тему
