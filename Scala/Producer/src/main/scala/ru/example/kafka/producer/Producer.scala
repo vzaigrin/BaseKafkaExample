@@ -7,7 +7,7 @@ import java.util.Properties
 object Producer {
   def main(args: Array[String]): Unit = {
     // Параметры
-    val servers = "localhost:29092"
+    val servers = "localhost:9092"
     val topic   = "test"
 
     // Создаём Producer
