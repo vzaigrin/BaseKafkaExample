@@ -7,13 +7,15 @@ import java.util.Properties
 object Producer {
   def main(args: Array[String]): Unit = {
     // Параметры
-    val servers = "localhost:9092"
+    val servers = "localhost:29092"
     val topic   = "test"
 
     // Создаём Producer
     val props = new Properties()
     props.put("bootstrap.servers", servers)
-    val producer = new KafkaProducer(props, new IntegerSerializer, new StringSerializer)
+    props.put("key.serializer", "org.apache.kafka.common.serialization.IntegerSerializer")
+    props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer")
+    val producer = new KafkaProducer[Int, String](props)
 
     // Генерируем записи
     try {
@@ -21,6 +23,7 @@ object Producer {
         producer.send(new ProducerRecord(topic, i, s"Message $i"))
       }
     } finally {
+      producer.flush()
       producer.close()
     }
 

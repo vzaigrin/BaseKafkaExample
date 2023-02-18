@@ -1,9 +1,9 @@
 ThisBuild / organization := "ru.example"
 ThisBuild / version := "1.0"
-ThisBuild / scalaVersion := "2.13.9"
+ThisBuild / scalaVersion := "2.13.10"
 
 ThisBuild / libraryDependencies ++= Seq(
-  "org.apache.kafka" % "kafka-clients"   % "3.3.1",
+  "org.apache.kafka" % "kafka-clients"   % "3.4.0",
   "ch.qos.logback"   % "logback-classic" % "1.3.0"
 )
 
