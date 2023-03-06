@@ -8,7 +8,7 @@ import scala.jdk.CollectionConverters.IterableHasAsJava
 object Consumer {
   def main(args: Array[String]): Unit = {
     // Параметры
-    val servers = "localhost:29092"
+    val servers = "localhost:9092"
     val topic   = "test"
     val group   = "g1"
 
