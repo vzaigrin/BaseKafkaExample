@@ -1,5 +1,7 @@
 *.class
 *.log
+*.jar
+**/out
 **/.history3
 **/.bloop/
 **/.bsp/
@@ -7,6 +9,7 @@
 **/.metals/
 **/.vscode/
 **/global-logging/
+**/target
 **/target/scala-2.13/classes/
 **/target/scala-2.13/update/
 **/target/scala-2.13/zinc/
