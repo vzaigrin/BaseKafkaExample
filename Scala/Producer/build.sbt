@@ -4,7 +4,7 @@ ThisBuild / scalaVersion := "2.13.10"
 
 ThisBuild / libraryDependencies ++= Seq(
   "org.apache.kafka" % "kafka-clients"   % "3.9.0",
-  "ch.qos.logback"   % "logback-classic" % "1.5.17"
+  "ch.qos.logback"   % "logback-classic" % "1.5.18"
 )
 
 lazy val root = (project in file("."))

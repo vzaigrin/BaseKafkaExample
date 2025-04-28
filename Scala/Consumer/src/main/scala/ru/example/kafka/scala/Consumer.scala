@@ -1,4 +1,4 @@
-package ru.example.kafka.consumer
+package ru.example.kafka.scala
 
 import org.apache.kafka.clients.consumer.KafkaConsumer
 import java.time.Duration
@@ -20,6 +20,7 @@ object Consumer {
     props.put("group.id", group)
     props.put("auto.offset.reset", "earliest")
     props.put("enable.auto.commit", "false")
+    
     val consumer = new KafkaConsumer(props)
     consumer.subscribe(List(topic).asJavaCollection)
 
