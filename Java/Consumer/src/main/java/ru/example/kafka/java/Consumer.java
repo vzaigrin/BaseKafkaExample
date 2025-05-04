@@ -66,6 +66,7 @@ public class Consumer {
             // close the consumer and commit the offsets
             consumer.close();
             System.out.println("The consumer is now gracefully shut down");
+            System.exit(0);
         }
 
         System.exit(0);
