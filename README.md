@@ -1,4 +1,5 @@
 # Базовые примеры работы с Kafka
 
-* **Scala** - пример на Scala
-* **Python** - пример на Python
+* **Scala** - примеры на Scala
+* **Java** - примеры на Java
+* **Python** - примеры на Python

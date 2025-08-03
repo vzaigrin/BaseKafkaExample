@@ -1,6 +1,8 @@
+.gitignore
 *.class
 *.log
 *.jar
+**/.DS_Store
 **/out
 **/.history3
 **/.bloop/
